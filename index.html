@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" 
+            type="image/png" 
+            href="web_icon.png">
+        <meta charset="utf-8">
+        <meta name="author" content="Jack Lo">
+        <meta name="description" content="A Threes Website">
+        <meta name="keywords" content="Threes">
+        <title>JL Threes</title>
+
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Encode+Sans:400,900%7COpen+Sans:400,700" rel="stylesheet">
+    </head>
+
+  <body>
+
+    <header>
+        <h1>Three<span class="last-letter">s</span></h1>
+        <h2>Use arrow keys (&uarr; &darr; &larr; &rarr;) to move pieces </h2>
+    </header>
+
+    <main>
+
+        <section>
+            <div class="time">
+                <p>&#9716;: <span class="display-time"></span></p>
+            </div>
+        </section>
+
+        <section>
+            <div class="next-puzzle">
+                <h3>Next Up</h3>
+                
+            </div>
+            <div class="game-area" role="application">
+                <div class="puzzles">
+                    <div class="puzzle-row">
+                        <div class="puzzle-container"></div>
+                        <div class="puzzle-container"></div>
+                        <div class="puzzle-container"></div>
+                        <div class="puzzle-container"></div>
+                    </div>
+                    <div class="puzzle-row">
+                        <div class="puzzle-container"></div>
+                        <div class="puzzle-container"></div>
+                        <div class="puzzle-container"></div>
+                        <div class="puzzle-container"></div>
+                    </div>
+                    <div class="puzzle-row">
+                        <div class="puzzle-container"></div>
+                        <div class="puzzle-container"></div>
+                        <div class="puzzle-container"></div>
+                        <div class="puzzle-container"></div>
+                    </div>
+                    <div class="puzzle-row">
+                        <div class="puzzle-container"></div>
+                        <div class="puzzle-container"></div>
+                        <div class="puzzle-container"></div>
+                        <div class="puzzle-container"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="rules">
+                <h3>Rules</h3>
+                <p>Squash pieces together for multiples of 3</p>
+                <p>Game over when no space or option left</p>
+            </div>
+            <div class="play">
+                <button type="button" class="btn btn-primary active" id="start-game">Start!</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <span class="text-muted">Designed and Coded by Jack Lo &copy; 2017</span>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="game-over-message" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h4 class="modal-title" id="outcome">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <p><span class="logis">Score: </span><span id="score"></span></p>
+                <p><span class="logis">Time: </span><span id="time"></span></p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" id="play-again">Play again!</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

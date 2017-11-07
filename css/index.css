@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #FAFAFA;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Marker Felt', fantasy;
+    margin-top: 0.5em;
+    color: #4286f4;
+}
+
+h2 {
+    font-family: 'Jazz LET', fantasy;
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+h3 {
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 1em;
+    margin-top: 0.75em;
+    color: grey;
+}
+
+body, h3 {
+    text-align: center;
+}
+
+.logis {
+    font-weight: bold;
+}
+
+.last-letter {
+    color: #41c1f4;
+}
+
+.time {
+    width: 400px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.time > p {
+    font-size: 2.5em;
+}
+
+.display-time {
+    font-size: 0.7em;
+}
+
+.play {
+    margin-top: 0.5em;
+}
+
+.game-area {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 540px;
+    width: 400px;
+    display: inline-block;
+}
+
+.puzzle-container {
+    display: inline-block;
+    width: 80px;
+    height: 110px;
+    margin: 10px 6px;
+    background-color: #B6D9D9;
+    vertical-align: top;
+    font-size: 4em;
+}
+
+.next-puzzle {
+    width: 100px;
+    height: 136px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+}
+
+.rules {
+    display: inline-block;
+    width: 100px;
+    height: 272px;
+    vertical-align: top;
+    margin-left: 15px;
+}
+
+.game-area, .next-puzzle, .rules, .small-tile {
+    box-shadow: 2px 2px 20px grey;
+}
+.game-area, .puzzle-container, .next-puzzle, .rules, .small-tile {
+    border-radius: 10px;
+}
+
+.next-puzzle, .game-area, .rules {
+    background-color: #D0E6DF;
+}
+
+.ones {
+    background-color: #F44242;
+    color: white;
+}
+
+.twos {
+    background-color: #41CDF4;
+    color: white;
+}
+
+.threes {
+    background-color: white;
+    color: black;
+}
+
+.aboveThrees {
+    background-color: white;
+    color: red;
+}
+
+.ones, .twos, .threes, .aboveThrees {
+    box-shadow: 2px 2px 10px grey;
+}
+
+.small-tile {
+    width: 50px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
